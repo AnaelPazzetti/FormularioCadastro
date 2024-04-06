@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+</head>
+
+    <body>
+        <h1>Formulário de Cadastro</h1>
+        <form method="post">
+            <label for="name">Nome Completo*:</label><br>
+            <input id="name" type="text" placeholder="Informe o nome" name="name" required><br>
+
+            <label for="email">Email*:</label><br>
+            <input id="email" name="email" type="email" placeholder="Informe o email" required><br>
+            
+            <label for="telefone">Telefone*:</label><br>
+            <input id="telefone" type="phone" name="telefone" placeholder="Infomre o telefone" required><br>
+            
+            <label for="tcontrato">Tempo de contrato em meses*:</label><br>
+            <input id="tcontrato" type="number" min="6" max="24" name="tcontrato" required><br>
+
+            <label for="datanascimento">Data de nascimento*:</label><br>
+            <input type="date" id="datanascimento" name="nasc" required><br>
+
+            <label for="sexo">Sexo:</label><br>
+            <input id="feminino" type="radio" name="sexo" value="feminino">
+            <label for="feminino">Feminino</label>
+            <input id="masculino" type="radio" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <label for="interesses">Interesses:</label>
+            <input type="checkbox" name="interesses" value="musica" id="musica">
+            <label for="musica">Música</label>
+            <input type="checkbox" name="interesses" value="esportes" id="esportes">
+            <label for="esportes">Esportes</label>
+            <input type="checkbox" name="interesses" value="cinema" id="cinema">
+            <label for="cinema">Cinema</label><br>
+
+            <label for="uf">Estado:</label><br>
+            <select id="uf" name="uf" required>
+                <option value="" disabled selected>Selecione um estado</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+            </select><br>
+
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message" placeholder="Digite sua mensagem" rows="5" cols="30"></textarea><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </form>
+
+    </body>
+
+</html>
